@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+/* -------------------- */
+/* header style start here */
+/* --------------------- */
+.weather {
+  background-color: #1864ab;
+  color: #fff3bf;
+  height: 2.2rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+.main-navbar p,
+.main-navbar a {
+  color: #fff;
+}
+.navbar li {
+  list-style: none;
+  text-transform: uppercase;
+}
+ul a:link,
+ul a:visited,
+ul a:active {
+  text-decoration: none;
+}
+.main-navbar {
+  height: 6.2rem;
+  background-color: #1c7ed6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.6rem;
+}
+.navbar {
+  display: flex;
+  gap: 2.4rem;
+  font-size: 2rem;
+}
+.link {
+}
+.active {
+  background-color: #1864ab;
+  padding: 1rem;
+  border-radius: 1.8rem;
+  padding: 1.2rem 2.4rem;
+}
+/* -------------------- */
+/* header style end here */
+/* --------------------- */
