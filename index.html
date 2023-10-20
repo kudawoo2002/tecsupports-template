@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animations.css" />
     <title>Tecsupports - Home</title>
   </head>
   <body>
     <!-- Header start here -->
     <header>
       <figure class="weather">
-        <p>Weather Report</p>
+        <p>Weather Report cureently unknown</p>
       </figure>
       <nav class="main-navbar">
-        <p class="logo">TecSupports</p>
+        <!-- <p class="logo">TecSupports</p> -->
+        <picture>
+          <img class="logo" src="images/logo.svg" alt="Tec support logo" />
+        </picture>
         <ul class="navbar">
           <li class="navbar-item">
             <a href="/index.html" class="navbar-link">Home</a>
@@ -34,7 +38,29 @@
 
     <!-- Main start here -->
     <main>
-      <p>Main page</p>
+      <section class="hero-section">
+        <div class="hero-section-content">
+          <figcaption class="hero-header">
+            <h1 class="primary-header">Your little help in ICT</h1>
+            <p class="hero-text">Your last stop for your ICT solutions</p>
+            <a href="#" class="hero-btn">Sign up now</a>
+          </figcaption>
+          <figure class="hero-">
+            <picture>
+              <img
+                src="images/hero-image.jpg"
+                alt="Keyboard, mouse, pen and food on math table"
+                class="hero-picture"
+              />
+            </picture>
+          </figure>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <h2 class="secondairy-heading">About Us</h2>
+        </div>
+      </section>
     </main>
     <!-- Main end here -->
     <!-- Footer start here -->

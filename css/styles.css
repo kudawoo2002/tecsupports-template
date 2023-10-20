@@ -3,6 +3,11 @@
   src: url(../fonts/Roboto-Regular.ttf) format("truetype");
   font-weight: 400;
 }
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +29,11 @@ html {
   text-align: center;
   padding: 0.5rem;
 }
+.logo {
+  /* font-size: 2.4rem;
+  font-weight: bold; */
+  width: 15rem;
+}
 .main-navbar p,
 .main-navbar a {
   color: #fff;
@@ -36,14 +46,30 @@ ul a:link,
 ul a:visited,
 ul a:active {
   text-decoration: none;
+  transition: all 1s;
 }
+
+.active {
+  background-color: #1864ab;
+  padding: 1rem;
+  border-radius: 1.8rem;
+  padding: 0.8rem 1.2rem;
+}
+
+ul a:hover {
+  background-color: #1864ab;
+  padding: 1rem;
+  border-radius: 1.8rem;
+  padding: 1.2rem 2.4rem;
+}
+
 .main-navbar {
-  height: 6.2rem;
+  height: 9.6rem;
   background-color: #1c7ed6;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3.6rem;
+  padding: 2.4rem 3.6rem;
 }
 .navbar {
   display: flex;
@@ -52,12 +78,68 @@ ul a:active {
 }
 .link {
 }
-.active {
-  background-color: #1864ab;
-  padding: 1rem;
-  border-radius: 1.8rem;
-  padding: 1.2rem 2.4rem;
-}
+
 /* -------------------- */
 /* header style end here */
 /* --------------------- */
+
+/* ------------------------------ */
+/* hero seciton style start here */
+/* ----------------------------- */
+.primary-header {
+  font-size: 4.8rem;
+  font-family: "roboto-Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.2rem;
+  margin-bottom: 3.2rem;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+.hero-header {
+  text-align: center;
+}
+.hero-text {
+  font-family: "Roboto-Regular";
+  font-size: 2.2rem;
+  margin-bottom: 1.8rem;
+  animation-name: moveInRight;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+.hero-btn {
+  border: none;
+  color: #fff;
+  background-color: #1864ab;
+  padding: 1.2rem 2.4rem;
+  text-transform: uppercase;
+  border-radius: 2.4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+}
+.hero-btn:link,
+.hero-btn:active,
+.hero-btn:visited {
+  text-decoration: none;
+}
+.hero-picture {
+  width: 70rem;
+  text-align: center;
+  border-radius: 4rem;
+}
+.hero-section {
+  background-color: #1c7ed6;
+  height: 55rem;
+}
+.hero-section-content {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9.6rem;
+  padding: 4.8rem 2.4rem;
+}
+/* ---------------------------- */
+/* hero seciton style end here */
+/* -------------------------- */
